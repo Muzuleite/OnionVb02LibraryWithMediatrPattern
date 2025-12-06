@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.0">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\..\Core\OnionVb02Library.Application\OnionVb02Library.Application.csproj" />
+	  <ProjectReference Include="..\..\Infrastructure\OnionVb02Library.Persistance\OnionVb02Library.Persistence.csproj" />
+	  <ProjectReference Include="..\..\Infrastructure\OnionVb02Library.ValidatorStructor\OnionVb02Library.ValidatorStructor.csproj" />
+	</ItemGroup>
+
+</Project>
